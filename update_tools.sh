@@ -5,9 +5,15 @@
 set -euo pipefail
 IFS=$'\n\t'
 
+set +u
+source shml.sh
+set -u
+
 #########
 # Begin #
 #########
+echo "$(color green ">>>>> Updating tools...")"
+
 sudo -H pip install \
   ansible \
   awscli \
@@ -17,3 +23,5 @@ sudo -H pip install \
   pip \
   pyrg \
   --upgrade
+
+echo "$(color lightgreen ">>>>> Tools updated.")"
