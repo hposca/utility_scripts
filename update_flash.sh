@@ -5,6 +5,10 @@
 set -euo pipefail
 IFS=$'\n\t'
 
+set +u
+source shml.sh
+set -u
+
 #########
 # Begin #
 #########
@@ -17,12 +21,20 @@ _inner_flash_dir="uncompressed_flash"
 _new_flash_dir="$(mktemp -d)"
 cd $_new_flash_dir
 
+echo "$(color green ">>>>> Downloading newest version of flash...")"
+
 wget -r -np -nd $_update_url -P .
 
 _flash_gzip=$(ls *flash*.tar.gz)
 
+echo "$(color green ">>>>> Extracting files...")"
+
 mkdir $_inner_flash_dir
 tar -xzf $_flash_gzip -C $_inner_flash_dir
 
+echo "$(color green ">>>>> Moving files to the right place...")"
+
 sudo cp $_inner_flash_dir/libflashplayer.so /usr/lib/adobe-flashplugin/libflashplayer.so
 sudo cp -r $_inner_flash_dir/usr/* /usr
+
+echo "$(color lightgreen ">>>>> Flash updated.")"

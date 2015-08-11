@@ -1,5 +1,7 @@
 # Utility Scripts
 
+Using [shml](https://github.com/MaxCDN/shml) for colors.
+
 ## update_firefox.sh
 
 Updates firefox to the newest version. Tested only in an Ubuntu like distro.
