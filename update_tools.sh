@@ -22,6 +22,7 @@ sudo -H pip install \
   ipython \
   pip \
   pyrg \
+  saws \
   --upgrade
 
 echo "$(color lightgreen ">>>>> Tools updated.")"
