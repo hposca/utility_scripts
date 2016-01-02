@@ -17,3 +17,19 @@ Updates tools like _ansible_, _awscli_ and _pip_.
 ## run_command_when_file_updates.sh
 
 Given a file to watch and a command, it will run the command when the file is updated.
+
+## package_management/debian/list_installed_packages_debian.sh
+
+Lists all the installed packages, in a Debian-like distribution, in a CSV format
+
+## package_management/debian/list_upgradable_packages_debian.sh
+
+Lists all the upgradable packages, in a Debian-like distribution, in a CSV format
+
+## package_management/redhat/list_installed_packages_redhat.sh
+
+Lists all the installed packages, in a RedHat-like distribution, in a CSV format
+
+## package_management/redhat/list_upgradable_packages_redhat.sh
+
+Lists all the upgradable packages, in a RedHat-like distribution, in a CSV format
