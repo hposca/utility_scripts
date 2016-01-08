@@ -12,7 +12,7 @@ set -u
 #########
 # Begin #
 #########
-_flash_version="11.2.202.554"
+_flash_version="11.2.202.559"
 
 # Find the newest Flash URL in https://get.adobe.com/flashplayer/
 _update_url="https://fpdownload.adobe.com/get/flashplayer/pdc/$_flash_version/install_flash_player_11_linux.x86_64.tar.gz"
