@@ -18,6 +18,10 @@ Updates tools like _ansible_, _awscli_ and _pip_.
 
 Given a file to watch and a command, it will run the command when the file is updated.
 
+- shrink_pdfs.sh
+
+Shrink the size of pdf files
+
 - package_management/debian/list_installed_packages_debian.sh
 
 Lists all the installed packages, in a Debian-like distribution, in a CSV format
